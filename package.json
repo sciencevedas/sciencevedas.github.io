@@ -19,6 +19,6 @@
   "dependencies": {
     "isotope-abundances": "2.0.4",
     "periodic-table": "0.0.8",
-    "require": "2.4.20"
+    "browserify": "16.2.3"
   }
 }
