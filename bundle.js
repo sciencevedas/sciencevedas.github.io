@@ -644,4 +644,6 @@ module.exports.numbers = data.reduce(function(obj, element) {
 },{"./data":3,"path":1}],5:[function(require,module,exports){
 var pt = require('periodic-table');
 
+console.log('hello world');
+console.log(pt.all);
 },{"periodic-table":4}]},{},[5]);
