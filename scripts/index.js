@@ -1,7 +1,11 @@
 var pt = require('periodic-table');
 
-console.log('hello world');
-console.log(pt.all);
+console.log('hi');
+
+function results() {
+    var element = document.getElementById('element');
+    console.log(element);
+}
 
 // loop through pt.all dataset
 // find a  match 
