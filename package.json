@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sciencevedas/sciencevedas#readme",
   "dependencies": {
-    "periodic-table": "0.0.8"
+    "periodic-table": "0.0.8",
+    "isotope-abundances": "2.0.4"
   }
 }
