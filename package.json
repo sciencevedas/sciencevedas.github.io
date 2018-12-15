@@ -1,0 +1,22 @@
+{
+  "name": "sciencevedas",
+  "version": "1.0.0",
+  "description": "A reference website for various high-level fields.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sciencevedas/sciencevedas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sciencevedas/sciencevedas/issues"
+  },
+  "homepage": "https://github.com/sciencevedas/sciencevedas#readme",
+  "dependencies": {
+    "periodic-table": "0.0.8"
+  }
+}
