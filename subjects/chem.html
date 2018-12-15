@@ -1,5 +1,11 @@
 <h2>Chemistry</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
+<div ng-app="">
+
+	<p>Enter chemical symbol: <input type="text" ng-model="chemical_symbol"></p>
+
+</div>
 <!--Form to input element-->
 <form action = "../cgi-bin/chem.py" method = "POST">
 Enter chemical symbol: <input type = "text" name = "chemical_symbol"/>
