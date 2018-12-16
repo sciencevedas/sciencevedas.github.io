@@ -7,33 +7,25 @@ function results() {
     const element = document.getElementById('element').value;
     console.log(element.toLowerCase());
 
-    // loop through database
-    /*
-    const keys = Object.keys(pt.symbols);
-    for (const key of keys) {
-        console.log(String(key).toLowerCase() + " " + element.toLowerCase())
-        if (String(key).toLowerCase() == element.toLowerCase()) {
-            console.log("FOUND IT");
-            console.log(pt.symbols.key);
-
-            const keys2 = Object.keys(key);
-            for (const key2 of keys2) {
-                console.log(key2 + " " + key.value);
-            }
-            console.log('==========================');
-        }
-    }
-    */
-
-    console.log("-=567890-=-098767890-=-0987890-=")
-
     for (const qey of pt.all()) {
-        console.log(qey);
         if (qey.symbol.toLowerCase() == element.toLowerCase()) {
             console.log("FOUND IT");
             console.log(qey.atomicNumber);
             console.log(qey.name);
             console.log(qey.electronegativity);
+
+            // put onto html
+            output = []
+
+            output.push(`Name: ${qey.name}`);
+            output.push(`Atomic no: ${qey.atomicNumber}`);
+            output.push(`Electronegativity: ${qey.electronegativity}`);
+            output.push(`Type: ${qey.groupBlock}`);
+            output.push(`IE: ${qey.ionizationEnergy} kJ/mol`);
+            output.push(`e- affinity: ${qey.electronAffinity} kJ/mol`);
+            output.push(`Electron configuration: ${qey.electronicConfiguration}`);
+
+            elementinfo.innerHTML = output.join("<br>");
         }
     }
 
